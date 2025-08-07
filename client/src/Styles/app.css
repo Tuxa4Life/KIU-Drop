@@ -1,0 +1,18 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    transition: .2s all;
+}
+
+body {
+    height: fit-content;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}

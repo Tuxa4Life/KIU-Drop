@@ -1,0 +1,162 @@
+.filter-bar {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.filter-bar > * {
+    height: 33px;
+    margin: 0 10px;
+}
+
+.ui.checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiple-select {
+    height: fit-content;
+    position: relative;
+}
+
+.select-list {    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+
+    width: 100%;
+    min-height: 33px;
+    height: fit-content;
+    background-color: white;
+    border: 1px #DEDEDF solid;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 0 5px;
+
+    position: relative;
+}
+
+.chevron {
+    color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 45%;
+    right: 5px;
+    transform: translateY(-50%);
+}
+
+.select-list .list-item {
+    display: inline-flex;
+    white-space: nowrap; 
+    margin: 3px 4px;
+    padding: 3px 4px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 3px;
+}
+
+.select-list .list-item:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+.select-list .list-item i {
+    margin-left: 5px;
+    font-size: 11px;
+    color: gray;
+}
+.select-list .list-item i:hover {
+    color: rgb(40, 40, 40);
+}
+
+.options-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px #d1d1d1 solid;
+    z-index: 4;
+}
+
+.option-item {
+    width: 100%;
+    padding: 5px 10px;
+    transition: none;
+    cursor: pointer;
+}
+
+.option-item:hover {
+    background-color: #f5f5f5;
+}
+
+.card-container {
+    margin: 0 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.explore-header {
+    width: 100%;
+    padding: 0 0 0 10%;
+}
+
+.item-card {
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 1%;
+    cursor: pointer;
+    flex: 0 0 300px;
+
+    margin: 15px 25px;
+}
+
+.item-card:hover {
+    box-shadow: 0px 0px 5px 0px #0000003d;
+}
+
+.item-card .img-wrapper {
+    width: 100%;
+    height: 350px;
+}
+
+.item-card .img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-card h2, .item-card p {
+    padding: 0;
+    margin: 0;
+}
+
+.item-card h2 {
+    font-size: 28px;
+    word-break: break-word;
+}
+
+.item-card p:first-of-type {
+    font-size: 20px;
+}
+
+.card-details {
+    width: 100%;
+}
+
+.card-buttons {
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,24 @@
+.auth-container {
+    width: 100%;
+    height: 80dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0 10px;
+}
+
+form {
+    width: 400px !important;
+    padding: 20px !important;
+}
+
+form span {
+    color: red;
+}
+
+.auth-container .list {
+    flex-direction: column;
+}

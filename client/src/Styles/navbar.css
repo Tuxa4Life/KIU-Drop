@@ -1,0 +1,105 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7dvh;
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    color: #053c65;
+    font-size: 22px;
+    font-weight: 600;
+
+    z-index: 5;
+}
+
+nav.scrolled {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+nav ul, .logo-wrapper, .misc {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul, .misc {
+    width: 35%;
+    justify-content: center;
+}
+
+.logo-wrapper {
+    width: 30%;
+    justify-content: center;
+}
+
+.logo-wrapper img {
+    height: 50%;
+    cursor: pointer;
+}
+
+nav ul li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    padding: 0 20px;
+    height: 100%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li::after, .selected::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    background-color: #207b5d;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+nav ul li .selected {
+    color: #207b5d;
+}
+
+nav ul li::after {
+    width: 0;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li:hover a, .misc i:hover, nav ul li.selected a {
+    color: #207b5d;
+}
+
+.selected::after {
+    width: 100%;
+}
+
+.misc {
+    justify-content: flex-end;
+}
+
+nav .misc i {
+    margin: 0 3%;
+    cursor: pointer;
+}
+
+nav .misc i:last-child {
+    margin-right: 10%;
+}
