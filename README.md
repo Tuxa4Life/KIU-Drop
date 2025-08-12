@@ -6,7 +6,7 @@
 
 ## 🛠 Stack
 
-- **Frontend**: React + TypeScript  
+- **Frontend**: React  
 - **Backend**: Supabase  
 - **Payments**: Stripe  
 - **Chat**: Socket.IO (temporary messaging)
