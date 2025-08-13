@@ -11,7 +11,10 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState({})
     const [loggedIn, setLoggedIn] = useState(false)
 
+    const [urlToRedirect, setUrlToRedirect] = useState('localhost:3000')
     useEffect(() => {
+        setUrlToRedirect(window.location.origin)
+
         const id = localStorage.getItem('uid')
         if (id) {
             getLocalUser(id)
@@ -138,7 +141,7 @@ const AuthProvider = ({ children }) => {
         await supabase.auth.signInWithOAuth({
             provider: 'google',
             options: {
-                redirectTo: `${window.location.origin}/auth/provider`
+                redirectTo: `${urlToRedirect}/auth/provider`
             }
         })
     }

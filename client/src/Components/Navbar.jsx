@@ -26,7 +26,7 @@ const Navbar = () => {
         </ul>
 
         <div className="logo-wrapper">
-            <img onClick={() => navigate('/')} src="https://i.ibb.co/4RKz3C5R/logo.png" alt="Error: Logo cannot be loaded." />
+            <img onClick={() => navigate('/')} src="https://i.ibb.co/QjXYNXvx/KIU-Drop.png" alt="Error: Logo cannot be loaded." />
         </div>
 
         <div className='misc'>
