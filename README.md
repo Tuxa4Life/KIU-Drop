@@ -1,12 +1,12 @@
 # KIU Drop
 
-**KIU Drop** is a rental platform for KIU students to lend and borrow stuff like tech, tools, or household items. We take a 10% cut from each rental.
+**KIU Drop** is a rental platform for KIU students to lend and borrow stuff like tech, tools, or household items.
 
 🌐 [kiudrop.tuxa.ge](https://kiudrop.tuxa.ge)
 
 ## 🛠 Stack
 
-- **Frontend**: React + TypeScript  
+- **Frontend**: React  
 - **Backend**: Supabase  
 - **Payments**: Stripe  
 - **Chat**: Socket.IO (temporary messaging)
